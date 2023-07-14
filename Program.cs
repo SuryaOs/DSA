@@ -4,7 +4,9 @@ using dsaproblem.Practice;
 using dsaproblem.Recursions;
 using dsaproblem.Sorting;
 using dsaproblem.Strings;
+using dsaproblem.Striver;
 using dsaproblem.Striver.BasicMaths;
+using dsaproblem.Striver.Hashing;
 
 // PracticeExtension.Practice();
 // ArraysExtension.Practice();
@@ -12,4 +14,5 @@ using dsaproblem.Striver.BasicMaths;
 // MultiDArraysExtension.Practice();
 // SortingExtension.Practice();
 // RecursionExtension.Practice();
-BasicMathExtension.Practice();
+// BasicMathExtension.Practice();
+HashingExtension.Practice();
