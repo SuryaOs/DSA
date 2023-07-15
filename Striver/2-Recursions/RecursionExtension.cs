@@ -1,4 +1,4 @@
-using dsaproblem.Recursions.Basics;
+using dsaproblem.Striver.Recursions.Basics;
 
 namespace dsaproblem.Recursions;
 
@@ -9,6 +9,10 @@ public class RecursionExtension
         //Print1ToN.print(1, 5);
         // PrintNto1.print(5);
         // SumOfNNumber.printOne();
-        FactorialOfN.print(3);
+        // FactorialOfN.print(3);
+        // int[] arr = {5,4,3,2,1};
+        // ReverseAnArray.Print(arr, 5);
+        // Palindrome.Print("ABCDCBA");
+        Fibonacci.Print(5);
     }
 }

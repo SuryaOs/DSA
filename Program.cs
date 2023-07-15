@@ -13,6 +13,6 @@ using dsaproblem.Striver.Hashing;
 // StringExtension.Practice();
 // MultiDArraysExtension.Practice();
 // SortingExtension.Practice();
-// RecursionExtension.Practice();
+RecursionExtension.Practice();
 // BasicMathExtension.Practice();
-HashingExtension.Practice();
+// HashingExtension.Practice();
