@@ -41,6 +41,7 @@ public class FindDuplicateInAnArray
     // Form new Index = Abs(array[0]) - 1 = value at a[0] - -1 will be neew index
     // If the value is greater than 0, Just Negative it.
     // While Iterating if the value is already negative then it is duplicate.
+    // It works if the number is from 1 to N
     public static void FindDuplicateYT(int[] array)
     {
         for (int i = 0; i < array.Length; i++)

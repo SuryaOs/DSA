@@ -16,7 +16,6 @@ public class PrintAllDivisors
                 num.Add(j);
             }
         }
-        num.Sort();
         Console.WriteLine(string.Join(", ", num));
     }
 }

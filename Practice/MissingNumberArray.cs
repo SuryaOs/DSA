@@ -15,7 +15,7 @@ public class MissingNumberArray
         }
         Console.WriteLine(sum);
     }
-
+// Wrong
     public static void MissingNumberYT(int[] array) {
         int sum = array[0];
         for (int i = 0; i<array.Length; i++)
