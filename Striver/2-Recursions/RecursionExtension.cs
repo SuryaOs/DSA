@@ -1,3 +1,4 @@
+using dsaproblem.Striver.Recursions.Advanced;
 using dsaproblem.Striver.Recursions.Basics;
 
 namespace dsaproblem.Recursions;
@@ -13,6 +14,12 @@ public class RecursionExtension
         // int[] arr = {5,4,3,2,1};
         // ReverseAnArray.Print(arr, 5);
         // Palindrome.Print("ABCDCBA");
-        Fibonacci.Print(5);
+        // Fibonacci.Print(5);
+
+        // Advanced
+        int[] a = {3, 1, 2};
+        // SubSequence.SubSequenceBit(a);
+
+        SubSequence.SubSequenceRecursive(0, a, new List<int>());
     }
 }
