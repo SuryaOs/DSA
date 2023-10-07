@@ -62,7 +62,7 @@ public class ArrayExtension
         // StockBuyandSell.BuyAndSellOptimal(buyAndSell2);
         int[] reArrange = { 1, 2, -4, -5 };
         int[] reArrange1 = { 1, 2, 3, -1, -2, -3 };
-        RearrangeArrayElementBySign.ReArrange(reArrange1);
+        // RearrangeArrayElementBySign.ReArrange(reArrange1);
 
 
 

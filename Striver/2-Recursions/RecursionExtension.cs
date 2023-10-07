@@ -17,9 +17,10 @@ public class RecursionExtension
         // Fibonacci.Print(5);
 
         // Advanced
-        int[] a = {3, 1, 2};
+        int[] a = {1, 1, 2, 3};
         // SubSequence.SubSequenceBit(a);
 
-        SubSequence.SubSequenceRecursive(0, a, new List<int>());
+        // SubSequence.SubSequenceRecursive(0, a, new List<int>());
+        Console.WriteLine(SubSequenceSum.FindSubSequenceSumCount(0, a, 0, 3));
     }
 }
