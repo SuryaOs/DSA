@@ -21,6 +21,8 @@ public class RecursionExtension
         // SubSequence.SubSequenceBit(a);
 
         // SubSequence.SubSequenceRecursive(0, a, new List<int>());
-        Console.WriteLine(SubSequenceSum.FindSubSequenceSumCount(0, a, 0, 3));
+        // Console.WriteLine(SubSequenceSum.FindSubSequenceSumCount(0, a, 0, 3));
+        int[] comb = {2, 3, 6, 7};
+        CombinationSum.FindCombination(comb, 7, 0, new List<int>());
     }
 }

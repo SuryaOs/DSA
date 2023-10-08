@@ -19,11 +19,11 @@ namespace dsaproblem.Sorting
 
                 while (i < j)
                 {
-                    while (i <= h - 1 && a[i] <= p) // Find an element greater than the pivot
+                    while (i <= h - 1 && a[i] <= p) // Find an element greater than the pivot ifa[i] > p
                     {
                         i++;
                     }
-                    while (j >= l + 1 && a[j] > p) // Find an element less than or equal to the pivot
+                    while (j >= l + 1 && a[j] > p) // Find an element less than or equal to the pivot a[j] <= p
                     {
                         j--;
                     }
