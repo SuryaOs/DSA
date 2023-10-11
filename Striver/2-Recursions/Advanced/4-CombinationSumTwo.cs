@@ -2,7 +2,7 @@ namespace dsaproblem.Striver.Recursions.Advanced;
 
 public class CombinationSumTwo
 {
-    // A recursion cannot start from same number, as it will cause duplicate data
+    // A recursion cannot start from same number, as it will cause duplicate datac( Unque Subsequence )
     // only two recursion in below case, index 0,3
     public static void Main()
     {

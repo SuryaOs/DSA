@@ -29,6 +29,8 @@ public class RecursionExtension
         int[] SubSetSums = {3, 1, 2};
         // SubSetSum.FindSubSetSum(SubSetSums, 0, 0, new List<int>());
         // int[] SubSetSumTwos = {1, 2, 2, 2, 3, 5};
-        SubSetSumTwo.Main();
+        // SubSetSumTwo.Main();
+        Permutation.Main();
+
     }
 }

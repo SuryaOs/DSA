@@ -5,6 +5,7 @@ public class CombinationSum
     // Pick - if (a[i] < target) with same Index
     // Not pick - i + 1
     // an number can be picked any number of time not like SubSequence sum that it should be picked only once
+    // it will have duplicate subsets
     public static void FindCombination(int[] a, int target, int i, List<int> list)
     {
         if (i == a.Length)
@@ -28,7 +29,7 @@ public class CombinationSum
         FindCombination(a, target, i + 1, list);
     }
 
-    // Same Approach with Additional DataSet (HashSet to Store the result)
+    // Same Approach with Additional DataSet (HashSet to Store the result) - Brute Force For Combination Sum Two
     public static void FindCombinationSum(int[] a, int target, int index, List<int> list, HashSet<List<int>> result)
     {
         if (index == a.Length)
