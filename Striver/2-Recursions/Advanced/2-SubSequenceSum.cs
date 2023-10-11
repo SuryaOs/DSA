@@ -2,6 +2,8 @@ namespace dsaproblem.Striver.Recursions.Advanced;
 
 public class SubSequenceSum
 {
+    // 2 ^ n . Find SubSequence of the Sum.
+    // if Sum is equal to the target print the Subsequences
     public static void FindSubSequenceSum(int index, int[] a, int sum, int target, List<int> list)
     {
         if (index >= a.Length)
@@ -21,6 +23,8 @@ public class SubSequenceSum
         list.Remove(a[index]);
         FindSubSequenceSum(index + 1, a, sum, target, list);
     }
+
+    // If Sum is equal to target, print only first subsequence
     public static bool FindSubSequenceSumOne(int index, int[] a, int sum, int target, List<int> list, int count)
     {
         if (index >= a.Length)
@@ -43,6 +47,7 @@ public class SubSequenceSum
 
         return false;
     }
+    // If sum is equal to the target, return the count of it.
     public static int FindSubSequenceSumCount(int index, int[] a, int sum, int target)
     {
         if (index >= a.Length)

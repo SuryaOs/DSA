@@ -59,7 +59,7 @@ public class ArrayExtension
         // MaxSubArraySum.SumOptimal(subSum4); 
         int[] buyAndSell = { 7, 1, 5, 3, 6, 4 };
         int[] buyAndSell2 = { 7, 6, 4, 3, 1 };
-        // StockBuyandSell.BuyAndSellOptimal(buyAndSell2);
+        StockBuyandSell.BuyAndSellOptimal(buyAndSell);
         int[] reArrange = { 1, 2, -4, -5 };
         int[] reArrange1 = { 1, 2, 3, -1, -2, -3 };
         // RearrangeArrayElementBySign.ReArrange(reArrange1);

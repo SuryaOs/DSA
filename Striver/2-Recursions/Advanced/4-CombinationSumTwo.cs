@@ -2,6 +2,8 @@ namespace dsaproblem.Striver.Recursions.Advanced;
 
 public class CombinationSumTwo
 {
+    // A recursion cannot start from same number, as it will cause duplicate data
+    // only two recursion in below case, index 0,3
     public static void Main()
     {
         int[] a = { 1, 1, 1, 2, 2 };

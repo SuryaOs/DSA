@@ -4,6 +4,7 @@ public class CombinationSum
 {
     // Pick - if (a[i] < target) with same Index
     // Not pick - i + 1
+    // an number can be picked any number of time not like SubSequence sum that it should be picked only once
     public static void FindCombination(int[] a, int target, int i, List<int> list)
     {
         if (i == a.Length)

@@ -2,7 +2,7 @@ namespace dsaproblem.Striver.Arrays.Easy
 {
     public class MaximumConsecutivesOnes
     {
-        // Two Variables is Optimal
+        // Two Variables (not pointers) is Optimal
         // I though of using adding the count in Hashset and getting the max
         public static void FindConsecutiveOnes(int[] a)
         {
