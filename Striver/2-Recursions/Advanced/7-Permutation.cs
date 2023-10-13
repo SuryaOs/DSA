@@ -2,7 +2,7 @@ namespace dsaproblem.Striver.Recursions.Advanced;
 
 public class Permutation
 {
-    public static void Main()
+    public static void FindPermutation()
     {
         int[] a = { 1, 2, 3 };
         var result = new List<List<int>>();

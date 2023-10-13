@@ -4,7 +4,7 @@ public class CombinationSumTwo
 {
     // A recursion cannot start from same number, as it will cause duplicate datac( Unque Subsequence )
     // only two recursion in below case, index 0,3
-    public static void Main()
+    public static void FindCombinationSumTwo()
     {
         int[] a = { 1, 1, 1, 2, 2 };
         var result = new HashSet<List<int>>();

@@ -2,7 +2,7 @@ namespace dsaproblem.Striver.Recursions.Advanced;
 
 public class SubSetSumTwo
 {
-    public static void Main()
+    public static void FindSubSetSum()
     {
         int[] a = { 1, 2, 2 };
         var result = new List<List<int>>();

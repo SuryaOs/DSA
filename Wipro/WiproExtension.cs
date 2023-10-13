@@ -2,7 +2,7 @@ namespace interview;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static void Find()
     {
         int x = 6794;
         while (x != 6174)
