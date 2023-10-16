@@ -30,7 +30,8 @@ public class RecursionExtension
         // SubSetSum.FindSubSetSum(SubSetSums, 0, 0, new List<int>());
         // int[] SubSetSumTwos = {1, 2, 2, 2, 3, 5};
         // SubSetSumTwo.Main();
-        Permutation.FindPermutation();
-
+        // Permutation.FindPermutation();
+        int[] permutation = {1, 2, 3};
+        PermutationSwap.FindPermutation(permutation, 0);
     }
 }
