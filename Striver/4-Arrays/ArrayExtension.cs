@@ -67,7 +67,9 @@ public class ArrayExtension
         // LeadersInAnArray.LeadersInAnArrayBrute(leaders);
         int[] longestConsecutiveSequence = { 100, 200, 1, 3, 2, 4 };
         int[] longestConsecutiveSequenceOne = { 102, 4, 100, 1, 101, 3, 2, 104, 1, 1 };
-        LongestConsecutiveSequence.FindLongestConsecutiveSequenceOptimal(longestConsecutiveSequenceOne);
+        // LongestConsecutiveSequence.FindLongestConsecutiveSequenceOptimal(longestConsecutiveSequenceOne);
+        int[] nextPermutation = { 1, 2, 3 };
+        NextPermutation.FindNextPermutation(nextPermutation);
 
 
     }
