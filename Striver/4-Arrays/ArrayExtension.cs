@@ -1,5 +1,6 @@
 using dsaproblem.Striver.Arrays.Easy;
 using dsaproblem.Striver.Arrays.Medium;
+using dsaproblem.Striver.Arrays.Medium.RotateMatrix;
 using dsaproblem.Striver.Arrays.Medium.SetMatrixZero;
 
 namespace dsaproblem.Striver.Arrays;
@@ -72,9 +73,13 @@ public class ArrayExtension
         int[] nextPermutation = { 1, 2, 3 };
         // NextPermutation.FindNextPermutation(nextPermutation);
         int[,] setMatrixZero = { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
-        int[,] setMatrixZeroOne = { {1, 1, 1 }, {1, 0, 1}, {1, 1, 1} };
+        int[,] setMatrixZeroOne = { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
         // Brute.FindSetMatrixBrute(setMatrixZeroOne);
         // Better.FindSetMatrixZeroBetter(setMatrixZero);
-        Optimal.FindSetMatrixZeroOptimal(setMatrixZero);
+        // Optimal.FindSetMatrixZeroOptimal(setMatrixZero);
+        int[,] rotateMatrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        int[,] rotateMatrixOne = { { 5, 1, 9, 11 }, { 2, 4, 8, 10 }, { 13, 3, 6, 7 }, { 15, 14, 12, 16 } };
+        // RotateMatrixBrute.RotateMatrix(rotateMatrixOne);
+        RotateMatrixOptimal.RotateMatrix(rotateMatrixOne);
     }
 }
