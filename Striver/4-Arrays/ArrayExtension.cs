@@ -1,5 +1,6 @@
 using dsaproblem.Striver.Arrays.Easy;
 using dsaproblem.Striver.Arrays.Medium;
+using dsaproblem.Striver.Arrays.Medium.SetMatrixZero;
 
 namespace dsaproblem.Striver.Arrays;
 
@@ -69,8 +70,11 @@ public class ArrayExtension
         int[] longestConsecutiveSequenceOne = { 102, 4, 100, 1, 101, 3, 2, 104, 1, 1 };
         // LongestConsecutiveSequence.FindLongestConsecutiveSequenceOptimal(longestConsecutiveSequenceOne);
         int[] nextPermutation = { 1, 2, 3 };
-        NextPermutation.FindNextPermutation(nextPermutation);
-
-
+        // NextPermutation.FindNextPermutation(nextPermutation);
+        int[,] setMatrixZero = { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
+        int[,] setMatrixZeroOne = { {1, 1, 1 }, {1, 0, 1}, {1, 1, 1} };
+        // Brute.FindSetMatrixBrute(setMatrixZeroOne);
+        // Better.FindSetMatrixZeroBetter(setMatrixZero);
+        Optimal.FindSetMatrixZeroOptimal(setMatrixZero);
     }
 }
