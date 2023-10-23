@@ -12,11 +12,11 @@ using dsaproblem.Wipro;
 
 // PracticeExtension.Practice();
 // ArraysExtension.Practice();
-// StringExtension.Practice();
+StringExtension.Practice();
 // MultiDArraysExtension.Practice();
 // SortingExtension.Practice();
 // RecursionExtension.Practice();
 // BasicMathExtension.Practice();
 // HashingExtension.Practice();
-ArrayExtension.Practice();
+// ArrayExtension.Practice();
 // WiproExtension.Practice();
