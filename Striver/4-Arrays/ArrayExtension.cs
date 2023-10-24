@@ -80,6 +80,10 @@ public class ArrayExtension
         int[,] rotateMatrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
         int[,] rotateMatrixOne = { { 5, 1, 9, 11 }, { 2, 4, 8, 10 }, { 13, 3, 6, 7 }, { 15, 14, 12, 16 } };
         // RotateMatrixBrute.RotateMatrix(rotateMatrixOne);
-        RotateMatrixOptimal.RotateMatrix(rotateMatrixOne);
+        // RotateMatrixOptimal.RotateMatrix(rotateMatrixOne);
+        // SpiralMatrix.PrintSpiralMatrix(rotateMatrix);
+        int[] countSubArraySum = {3, 1, 2, 4}; // 6
+        int[] countSubArraySumOne = {1, 2, 3}; // 3
+        CountSubArraySum.PrintCount(countSubArraySumOne, 3);
     }
 }

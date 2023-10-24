@@ -2,13 +2,13 @@ namespace dsaproblem.ArraysMultiD;
 
 public class SprialMatrix
 {
-    public static void Sprial()
+    public static void Sprial(int[,] a)
     {
-        int[,] a = {
-            {0, 1, 1},
-            {7, 0, 1},
-            {8, 0, 9}
-        };
+        // int[,] a = {
+        //     {0, 1, 1},
+        //     {7, 0, 1},
+        //     {8, 0, 9}
+        // };
         //00 01 02 12 22 21 20 10 11
         int left = 0;
         int right = a.GetLength(1) - 1; //2
@@ -40,15 +40,15 @@ public class SprialMatrix
                 bottom--; //1
             }
 
-            if(left <= right)
+            if (left <= right)
             {
-            //To print left column, bottom to up
+                //To print left column, bottom to up
 
-            for (int i = bottom; i >= top; i--)
-            {
-                nums.Add(a[i, left]);
-            }
-            left++; //1
+                for (int i = bottom; i >= top; i--)
+                {
+                    nums.Add(a[i, left]);
+                }
+                left++; //1
             }
         }
         nums.ForEach(x => Console.Write(x));

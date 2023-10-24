@@ -11,6 +11,6 @@ public static class MultiDArraysExtension
         // TransposeMatrix.Transpose(a);
         // SumMatrix.Sum(a, a);
         // SumMatrix.SumRowAndColumn(a);
-        SprialMatrix.Sprial();
+        // SprialMatrix.Sprial(a);
  }
 }
