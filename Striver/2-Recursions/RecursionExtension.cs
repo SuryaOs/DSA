@@ -25,7 +25,7 @@ public class RecursionExtension
         // Console.WriteLine(SubSequenceSum.FindSubSequenceSumCount(0, a, 0, 3));
         int[] comb = { 2, 3, 6, 7 };
         // CombinationSum.FindCombination(comb, 7, 0, new List<int>());
-        // CombinationSumTwo.Main();
+        // CombinationSumTwo.FindCombinationSumTwo();
 
         int[] SubSetSums = { 3, 1, 2 };
         // SubSetSum.FindSubSetSum(SubSetSums, 0, 0, new List<int>());
@@ -33,6 +33,6 @@ public class RecursionExtension
         // SubSetSumTwo.Main();
         // Permutation.FindPermutation();
         int[] permutation = { 3, 1, 2 };
-        PermutationSwap.FindPermutation(permutation, 0);
+        // PermutationSwap.FindPermutation(permutation, 0);
     }
 }

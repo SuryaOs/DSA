@@ -1,4 +1,5 @@
 using dsaproblem.Striver.Arrays.Easy;
+using dsaproblem.Striver.Arrays.Hard;
 using dsaproblem.Striver.Arrays.Medium;
 using dsaproblem.Striver.Arrays.Medium.RotateMatrix;
 using dsaproblem.Striver.Arrays.Medium.SetMatrixZero;
@@ -82,8 +83,15 @@ public class ArrayExtension
         // RotateMatrixBrute.RotateMatrix(rotateMatrixOne);
         // RotateMatrixOptimal.RotateMatrix(rotateMatrixOne);
         // SpiralMatrix.PrintSpiralMatrix(rotateMatrix);
-        int[] countSubArraySum = {3, 1, 2, 4}; // 6
-        int[] countSubArraySumOne = {1, 2, 3}; // 3
-        CountSubArraySum.PrintCount(countSubArraySumOne, 3);
+        int[] countSubArraySum = { 3, 1, 2, 4 }; // 6
+        int[] countSubArraySumOne = { 1, 2, 3 }; // 3
+        // CountSubArraySum.PrintCount(countSubArraySumOne, 3);
+
+        // Hard
+        // PascalTriangle.NCR(5,3);
+        // int[] numberMoreThanNb3 = { 3, 2, 2, 3, 2, 4 };
+        int[] numberMoreThanNb3 = { 2, 1, 1, 3, 1, 4, 5, 6 };
+        // NumbersThatOccursNBy3.Brute(numberMoreThanNb3);
+        NumbersThatOccursNBy3.Optimal(numberMoreThanNb3);
     }
 }
