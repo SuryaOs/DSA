@@ -92,6 +92,10 @@ public class ArrayExtension
         // int[] numberMoreThanNb3 = { 3, 2, 2, 3, 2, 4 };
         int[] numberMoreThanNb3 = { 2, 1, 1, 3, 1, 4, 5, 6 };
         // NumbersThatOccursNBy3.Brute(numberMoreThanNb3);
-        NumbersThatOccursNBy3.Optimal(numberMoreThanNb3);
+        // NumbersThatOccursNBy3.Optimal(numberMoreThanNb3);
+        int[] threeSum = { -1, 0, 1, 2, -1, 4 };
+        // -1 -1 0 1 2 4
+        // ThreeSum.Brute(threeSum);
+        // ThreeSum.Optimal(threeSum);
     }
 }
