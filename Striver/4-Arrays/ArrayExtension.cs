@@ -97,5 +97,11 @@ public class ArrayExtension
         // -1 -1 0 1 2 4
         // ThreeSum.Brute(threeSum);
         // ThreeSum.Optimal(threeSum);
+        // ThreeSum.Better(threeSum);
+        int[] fourSum = { 4, 3, 3, 4, 4, 2, 1, 2, 1, 1 }; //9
+        int[] fourSumOne = { 1, 0, -1, 0, -2, 2 }; //0
+        // FourSum.Brute(fourSumOne, 0);
+        // FourSum.Better(fourSum, 9);
+        FourSum.Optimal(fourSum, 9);
     }
 }

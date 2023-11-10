@@ -54,6 +54,29 @@ public class ThreeSum
             }
         }
     }
+    public static void Better(int[] a)
+    {
+        // a[i] + a[j] + a[k] = 0 => a[k] = -a[i] - a[j]
+        HashSet<int> set = new();
+        int n = a.Length;
+        for (int i = 0; i < a.Length; i++)
+        {
+            set.Clear();
+            for (int j = i + 1; j < a.Length; j++)
+            {
+                int pre = -(a[i] + a[j]);
+                if (set.Contains(pre))
+                {
+                    // Use HashSet to store unique combo
+                    Console.WriteLine($"{pre} {a[i]} {a[j]}");
+                }
+                else
+                {
+                    set.Add(a[j]);
+                }
+            }
+        }
+    }
 }
 
 public class IntArrayComparer : IEqualityComparer<int[]>
