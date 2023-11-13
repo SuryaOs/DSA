@@ -102,6 +102,10 @@ public class ArrayExtension
         int[] fourSumOne = { 1, 0, -1, 0, -2, 2 }; //0
         // FourSum.Brute(fourSumOne, 0);
         // FourSum.Better(fourSum, 9);
-        FourSum.Optimal(fourSum, 9);
+        // FourSum.Optimal(fourSum, 9);
+        int[] longSubArraySumZero = { 9, -3, 3, -1, 6, -5 };
+        int[] longSubArraySumZeroOne = { 6, -2, 2, -8, 1, 7, 4, -10 };
+        // LongestSubArraySumZeroLength.Brute(longSubArraySumZero);
+        LongestSubArraySumZeroLength.Optimal(longSubArraySumZero);
     }
 }
