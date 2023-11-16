@@ -106,6 +106,9 @@ public class ArrayExtension
         int[] longSubArraySumZero = { 9, -3, 3, -1, 6, -5 };
         int[] longSubArraySumZeroOne = { 6, -2, 2, -8, 1, 7, 4, -10 };
         // LongestSubArraySumZeroLength.Brute(longSubArraySumZero);
-        LongestSubArraySumZeroLength.Optimal(longSubArraySumZero);
+        // LongestSubArraySumZeroLength.Optimal(longSubArraySumZero);
+        int[] countSubArrayXorTarget = {4, 2, 2, 6, 4}; // 6
+        // CountSubArrayXorTarget.Brute(countSubArrayXorTarget, 6);
+        CountSubArrayXorTarget.Optimal(countSubArrayXorTarget, 6);
     }
 }
