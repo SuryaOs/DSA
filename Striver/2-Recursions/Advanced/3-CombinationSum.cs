@@ -45,6 +45,7 @@ public class CombinationSum
         {
             list.Add(a[index]);
             target = target - a[index];
+            // FindCombinationSum(a, target, index, list, result);
             FindCombinationSum(a, target, index, list, result);
             target = target + a[index];
             list.Remove(a[index]);

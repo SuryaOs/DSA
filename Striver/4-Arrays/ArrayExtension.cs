@@ -32,6 +32,10 @@ public class ArrayExtension
         int[] i3 = { -13, 0, 6, 15, 16, 2 };
         int[] i4 = { 1, 2, 3, 4, 5 };
         int[] i5 = { 1, 2, 3, 1, 1, 1 };
+
+        //11/29/2023
+        int[] movesZeroToEnd = { 1, 0, 2, 3, 0, 4, 0, 1 };
+        int[] movesZeroToEndTwo = { 1, 2, 0, 1, 0, 4, 0 };
         // LargestElementInAnArray.FindLargestBrute(b);
         // SecondLargestElement.FindSecondLargestElement(c);
         // CheckIfArrayIsSorted.IsArraySorted(c);
@@ -39,7 +43,7 @@ public class ArrayExtension
         // RemoveDuplicatesFromSortedArray.RemoveDuplicateStriver(d);
         // LeftRotateArray.LeftRotate(a);
         // RotateArrayByKElements.RotateLeft(e, 2)
-        // MoveZeroesToEnd.MoveZeroesToEndOptimal(h);
+        MoveZeroesToEnd.MoveZeroesToEndOptimal(h);
         // LinearSearch.Search(a, 1);
         // UnionArray.UnionOptimal(arr1, arr2);
         // FindMissingNumber.Find(miss); 
@@ -107,8 +111,8 @@ public class ArrayExtension
         int[] longSubArraySumZeroOne = { 6, -2, 2, -8, 1, 7, 4, -10 };
         // LongestSubArraySumZeroLength.Brute(longSubArraySumZero);
         // LongestSubArraySumZeroLength.Optimal(longSubArraySumZero);
-        int[] countSubArrayXorTarget = {4, 2, 2, 6, 4}; // 6
+        int[] countSubArrayXorTarget = { 4, 2, 2, 6, 4 }; // 6
         // CountSubArrayXorTarget.Brute(countSubArrayXorTarget, 6);
-        CountSubArrayXorTarget.Optimal(countSubArrayXorTarget, 6);
+        // CountSubArrayXorTarget.Optimal(countSubArrayXorTarget, 6);
     }
 }

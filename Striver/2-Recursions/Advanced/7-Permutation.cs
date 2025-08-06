@@ -7,7 +7,7 @@ public class Permutation
     {
         int[] a = { 1, 2, 3 };
         var result = new List<List<int>>();
-        var dict = new Dictionary<int, bool>();
+        var dict = new Dictionary<int, bool>(); // 13-10-24 => var boolArray = new bool[a.Length];
         for (int i = 0; i < a.Length; i++)
         {
             dict[i] = false;

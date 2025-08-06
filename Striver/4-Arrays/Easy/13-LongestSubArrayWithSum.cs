@@ -64,7 +64,7 @@ public class LongestSubArrayWithSum
         for (int i = 0; i < a.Length; i++)
         {
             sum += a[i];
-            if (!dict.ContainsKey(sum))
+            if (!dict.ContainsKey(sum)) // if the sum already exists, don't change the index because we want the longest sub array
             {
                 dict.Add(sum, i);
             }

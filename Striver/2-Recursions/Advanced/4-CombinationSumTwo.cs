@@ -21,13 +21,13 @@ public class CombinationSumTwo
             result.Add(new List<int>(list));
             return;
         }
-        for (int i = index; i < a.Length; i++)
+        for (int i = index; i < a.Length; i++) // this index is for sidewards , the starters
         {
             if (i > index && a[i] == a[i - 1]) continue;
             if (a[i] > target) break;
 
             list.Add(a[i]);
-            CombinationSum(a, target - a[i], i + 1, list, result);
+            CombinationSum(a, target - a[i], i + 1, list, result); // this index is for downwards
             list.Remove(a[i]);
         }
     }

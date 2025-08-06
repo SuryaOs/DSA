@@ -2,6 +2,8 @@ namespace dsaproblem.Striver.Recursions.Advanced;
 
 public class SubSetSumTwo
 {
+    // It is same as CombinationSumTwo -> No duplicate Subset
+    // Print all the Subset Sum without Dupicates
     public static void FindSubSetSum()
     {
         int[] a = { 1, 2, 2 };
