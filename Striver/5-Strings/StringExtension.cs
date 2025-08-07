@@ -1,4 +1,5 @@
 using dsaproblem.Striver.Strings.Easy;
+using dsaproblem.Striver.Strings.Medium;
 using dsaproblem.StriverStrings.Easy;
 
 namespace dsaproblem.Striver.Strings;
@@ -24,7 +25,13 @@ public class StringExtension
         // Anagram.Brute(s6, s7);
         string s8 = "boo";
         string s9 = "off";
-        Ismorphic.Brute(s8, s9);
+        // Ismorphic.Brute(s8, s9);
+
+        // Medium
+        s = "tree";
+        // SortCharacterByFreq.Brute(s);
+        s = "XCIV";
+        RomanToInteger.Optimal(s);
 
     }
 }
