@@ -31,7 +31,12 @@ public class StringExtension
         s = "tree";
         // SortCharacterByFreq.Brute(s);
         s = "XCIV";
-        RomanToInteger.Optimal(s);
+        // RomanToInteger.Optimal(s);
+        s = "(1+(2*3)+((8)/4))";
+        // MaximumNestingDepthOfParantheses.Brute(s);
+        s = "4193 with words";
+        s = "-12-23";
+        StringToInteger.Optimal(s);
 
     }
 }
