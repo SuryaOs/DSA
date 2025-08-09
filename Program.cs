@@ -8,6 +8,7 @@ using dsaproblem.Striver;
 using dsaproblem.Striver.Arrays;
 using dsaproblem.Striver.BasicMaths;
 using dsaproblem.Striver.Hashing;
+using dsaproblem.Striver.LinkedList;
 using dsaproblem.Striver.Strings;
 using dsaproblem.Wipro;
 
@@ -21,4 +22,5 @@ using dsaproblem.Wipro;
 // HashingExtension.Practice();
 // ArrayExtension.Practice();
 // WiproExtension.Practice();
-StringExtension.Practice();
+// StringExtension.Practice();
+LinkedListExtension.Practice();
