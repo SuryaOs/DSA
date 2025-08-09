@@ -36,7 +36,10 @@ public class StringExtension
         // MaximumNestingDepthOfParantheses.Brute(s);
         s = "4193 with words";
         s = "-12-23";
-        StringToInteger.Optimal(s);
+        // StringToInteger.Optimal(s);
+        s = "bbacba";
+        // CountNumberOfSubstrings.Brute(s);
+        SumOfBeautyOfSubStrings.Brute(s);
 
     }
 }
