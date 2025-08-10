@@ -8,7 +8,8 @@ public class Deletion
         Node head = Intro.ArrayToLL(a);
         // Node newHead = DeleteHead(head);
         // Node newHead = DeleteTail(head);
-        Node newHead = DeleteK(head, 0);
+        // Node newHead = DeleteK(head, 0);
+        Node newHead = DeleteKValue(head, 1);
         Intro.Print(newHead);
     }
 
@@ -46,6 +47,27 @@ public class Deletion
         while (temp != null)
         {
             if (++count == k)
+            {
+                temp.back.next = temp.next;
+                if (temp.next != null)
+                    temp.next.back = temp.back;
+                break;
+            }
+            temp = temp.next;
+        }
+        return head;
+    }
+
+    public static Node DeleteKValue(Node head, int val)
+    {
+        if (head == null)
+            return null;
+        if (head.data == val)
+            return DeleteHead(head);
+        Node temp = head;
+        while (temp != null)
+        {
+            if (temp.data == val)
             {
                 temp.back.next = temp.next;
                 if (temp.next != null)
