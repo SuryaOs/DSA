@@ -1,4 +1,6 @@
-namespace dsaproblem.Striver.LinkedList;
+// namespace dsaproblem.Striver.LinkedList;
+
+using dsaproblem.Striver.LinkedList.DoublyLinkedList;
 
 public class LinkedListExtension
 {
@@ -6,6 +8,8 @@ public class LinkedListExtension
     {
         // Intro.Brute(); // ConvertArrayToLL, TraverseAndPrint, LengthOfLL
         // Deletion.Brute(); // Delete Head, Tail, Kth Node, K elem
-        Insertion.Brute(); // Insert Head, Tail, KthNode, Before K Elem
+        // Insertion.Brute(); // Insert Head, Tail, KthNode, Before K Elem
+        // Intro.Brute();
+        Deletion.Brute();
     }
 }
