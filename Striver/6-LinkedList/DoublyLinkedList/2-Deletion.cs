@@ -9,8 +9,10 @@ public class Deletion
         // Node newHead = DeleteHead(head);
         // Node newHead = DeleteTail(head);
         // Node newHead = DeleteK(head, 0);
-        Node newHead = DeleteKValue(head, 1);
-        Intro.Print(newHead);
+        // Node newHead = DeleteKValue(head, 1);
+        Node newHead = DeleteNode(head.next.next.next.next);
+        var param = newHead == null ? head : newHead;
+        Intro.Print(param);
     }
 
     public static Node DeleteHead(Node head)
@@ -77,5 +79,23 @@ public class Deletion
             temp = temp.next;
         }
         return head;
+    }
+
+    public static Node DeleteNode(Node temp)
+    {
+        if (temp == null)
+            return null;
+        if (temp.back == null)
+        {
+            temp = temp.next;
+            temp.back = null;
+            return temp;
+        }
+
+        temp.back.next = temp.next;
+        if (temp.next != null)
+            temp.next.back = temp.back;
+
+        return null;
     }
 }

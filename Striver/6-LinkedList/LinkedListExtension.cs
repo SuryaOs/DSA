@@ -11,5 +11,6 @@ public class LinkedListExtension
         // Insertion.Brute(); // Insert Head, Tail, KthNode, Before K Elem
         // Intro.Brute();
         Deletion.Brute();
+        // Insertion.Brute();
     }
 }
