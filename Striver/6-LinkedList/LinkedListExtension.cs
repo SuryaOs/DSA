@@ -9,8 +9,8 @@ public class LinkedListExtension
         // Intro.Brute(); // ConvertArrayToLL, TraverseAndPrint, LengthOfLL
         // Deletion.Brute(); // Delete Head, Tail, Kth Node, K elem
         // Insertion.Brute(); // Insert Head, Tail, KthNode, Before K Elem
-        // Intro.Brute();
-        Deletion.Brute();
-        // Insertion.Brute();
+        // Intro.Brute(); // ConvertArrayToDLL, TraverseAndPrint
+        // Deletion.Brute(); // Dlete Head, Tail, Kth Node, K elem, before give node
+        Insertion.Brute(); // Insert before head, before tail, before kth node, before given node
     }
 }
