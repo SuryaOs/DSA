@@ -1,4 +1,4 @@
-namespace dsaproblem.Striver.LinkedList;
+namespace dsaproblem.Striver.LinkedList.SinglyLinkedList;
 
 public class Intro
 {

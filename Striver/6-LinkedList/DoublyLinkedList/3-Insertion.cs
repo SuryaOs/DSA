@@ -5,7 +5,7 @@ public class Insertion
     public static void Brute()
     {
         int[] a = { 1, 2, 3, 4 };
-        Node head = Intro.ArrayToLL(a);
+        Node head = Intro.ArrayToDLL(a);
         // Node newHead = InsertHead(head, 100);
         // Node newHead = InsertTail(head, 100);
         // Node newHead = InsertBeforeK(head, 100, 3);

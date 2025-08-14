@@ -5,11 +5,11 @@ public class Intro
     public static void Brute()
     {
         int[] a = { 1, 2, 3, 4 };
-        Node head = ArrayToLL(a);
+        Node head = ArrayToDLL(a);
         Print(head);
     }
 
-    public static Node ArrayToLL(int[] arr)
+    public static Node ArrayToDLL(int[] arr)
     {
         Node head = new Node(arr[0], null, null);
         Node temp = head;

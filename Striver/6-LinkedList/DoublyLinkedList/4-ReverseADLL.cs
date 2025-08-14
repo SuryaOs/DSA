@@ -5,7 +5,7 @@ public class ReverseADLL
     public static void Brute()
     {
         int[] a = { 1, 2, 3, 4 };
-        Node head = Intro.ArrayToLL(a);
+        Node head = Intro.ArrayToDLL(a);
         // Node newHead = Reverse(head);
         Node newHead = ReverseLink(head);
         Intro.Print(newHead);

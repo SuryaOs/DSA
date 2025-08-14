@@ -5,7 +5,7 @@ public class Deletion
     public static void Brute()
     {
         int[] a = { 1, 2, 3, 4 };
-        Node head = Intro.ArrayToLL(a);
+        Node head = Intro.ArrayToDLL(a);
         // Node newHead = DeleteHead(head);
         // Node newHead = DeleteTail(head);
         // Node newHead = DeleteK(head, 0);
