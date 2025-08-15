@@ -14,6 +14,7 @@ public class LinkedListExtension
         // Insertion.Brute(); // Insert before head, before tail, before kth node, before given node
         // ReverseADLL.Brute();
         // AddTwoNumbers.Brute();
-        OddEvenGroup.Brute();
+        // OddEvenGroup.Brute();
+        Sort012.Brute();
     }
 }
