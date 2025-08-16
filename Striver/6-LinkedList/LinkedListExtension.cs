@@ -15,6 +15,14 @@ public class LinkedListExtension
         // ReverseADLL.Brute();
         // AddTwoNumbers.Brute();
         // OddEvenGroup.Brute();
-        Sort012.Brute();
+        // Sort012.Brute();
+        DeleteNthNodeFromBack.Brute();
+
+        /*
+            Data Swap
+            Node Swap
+            Dummy Node
+            Fast Pointer
+        */
     }
 }
