@@ -16,10 +16,12 @@ public class LinkedListExtension
         // AddTwoNumbers.Brute();
         // OddEvenGroup.Brute();
         // Sort012.Brute();
-        DeleteNthNodeFromBack.Brute();
+        // DeleteNthNodeFromBack.Brute();
+        ReverseASLL.Brute();
 
         /*
             Data Swap
+            Extra Stack or List the data
             Node Swap
             Dummy Node
             Fast Pointer
