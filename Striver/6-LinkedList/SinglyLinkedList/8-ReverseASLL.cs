@@ -4,10 +4,10 @@ public class ReverseASLL
 {
     public static void Brute()
     {
-        int[] a = { 1, 2, 3, 4, 5 };
+        int[] a = { 1, 2, 3, 4 };
         Node head = Intro.ArrayToLL(a);
         // ReverseStack(head);
-        Node newHead = ReverseLink(head);
+        Node newHead = ReverseIterative(head);
         Intro.Print(newHead);
     }
 
@@ -42,5 +42,16 @@ public class ReverseASLL
             temp = front;
         }
         return prev;
+    }
+    private static Node ReverseIterative(Node head)
+    {
+        if (head == null || head.next == null) return head;
+
+        Node newHead = ReverseIterative(head.next);
+        Node front = head.next;
+        front.next = head;
+        head.next = null;
+
+        return newHead;
     }
 }
