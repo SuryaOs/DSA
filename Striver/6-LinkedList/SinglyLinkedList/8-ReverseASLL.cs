@@ -29,7 +29,7 @@ public class ReverseASLL
         return head;
     }
 
-    private static Node ReverseLink(Node head)
+    public static Node ReverseLink(Node head)
     {
         if (head == null || head.next == null) return head;
         Node temp = head;
