@@ -19,7 +19,8 @@ public class LinkedListExtension
         // DeleteNthNodeFromBack.Brute(); // Fast
         // ReverseASLL.Brute();
         // MiddleOfSLL.Brute(); // Fast Pointer
-        FindPalindrome.Brute();
+        // FindPalindrome.Brute();
+        AddOneToLL.Brute();
 
         /*
             Data Swap
