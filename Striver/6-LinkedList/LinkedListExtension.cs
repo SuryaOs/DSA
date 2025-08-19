@@ -20,7 +20,8 @@ public class LinkedListExtension
         // ReverseASLL.Brute();
         // MiddleOfSLL.Brute(); // Fast Pointer
         // FindPalindrome.Brute();
-        AddOneToLL.Brute();
+        // AddOneToLL.Brute();
+        FindIntersectPoint.Brute();
 
         /*
             Data Swap
