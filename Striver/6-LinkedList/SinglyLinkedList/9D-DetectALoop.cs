@@ -1,13 +1,11 @@
-using dsaproblem.Striver.LinkedList.DoublyLinkedList;
-
-namespace Striver.SinglyLinkedList;
+namespace dsaproblem.Striver.LinkedList.SinglyLinkedList;
 
 public class DetectALoop
 {
     public static void Brute()
     {
         int[] a = { 1, 2, 3, 4, 5, 6 };
-        Node node = Intro.ArrayToDLL(a);
+        Node node = Intro.ArrayToLL(a);
         node.next.next.next.next.next.next = node.next.next; // Creating A Looooooooooooooo
         bool isLoop = DetectLoopWithNoSpace(node);
         Console.WriteLine(isLoop);

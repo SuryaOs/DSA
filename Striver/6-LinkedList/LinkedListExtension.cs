@@ -1,7 +1,6 @@
 // namespace dsaproblem.Striver.LinkedList;
 
 using dsaproblem.Striver.LinkedList.SinglyLinkedList;
-using Striver.SinglyLinkedList;
 
 public class LinkedListExtension
 {
@@ -23,7 +22,8 @@ public class LinkedListExtension
         // FindPalindrome.Brute();
         // AddOneToLL.Brute();
         // FindIntersectPoint.Brute();
-        DetectALoop.Brute();
+        // DetectALoop.Brute();
+        LengthOfLoop.Brute();
 
         /*
             Data Swap
