@@ -14,7 +14,8 @@ public class FindIntersectPoint
         nodeB.next.next = nodeC;
 
         // Node head = FindIntersect(nodeA, nodeB);
-        Node head = FindIntersectNoExtraSpace(nodeA, nodeB);
+        // Node head = FindIntersectNoExtraSpace(nodeA, nodeB);
+        Node head = Optimal(nodeA, nodeB);
         Intro.Print(head);
     }
     private static Node FindIntersect(Node headA, Node headB)
@@ -60,6 +61,20 @@ public class FindIntersectPoint
             }
             t1 = t1.next;
             t2 = t2.next;
+        }
+        return null;
+    }
+    private static Node Optimal(Node tempA, Node tempB)
+    {
+        while (tempA != tempB)
+        {
+            tempA = tempA.next;
+            tempB = tempB.next;
+            if (tempA == tempB)
+                return tempA;
+
+            if (tempA == null) tempA = tempB;
+            if (tempB == null) tempB = tempA;
         }
         return null;
     }
