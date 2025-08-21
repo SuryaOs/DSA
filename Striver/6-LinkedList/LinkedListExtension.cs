@@ -1,5 +1,6 @@
 // namespace dsaproblem.Striver.LinkedList;
 
+using dsaproblem.Striver.LinkedList.DoublyLinkedList;
 using dsaproblem.Striver.LinkedList.SinglyLinkedList;
 
 public class LinkedListExtension
@@ -25,7 +26,8 @@ public class LinkedListExtension
         // DetectALoop.Brute();
         // LengthOfLoop.Brute();
         // DeleteMiddleNode.Brute();
-        StartingPointOfLoop.Brute();
+        // StartingPointOfLoop.Brute();
+        DeleteAllOccurenceOfKey.Brute();
 
         /*
             Data Swap
