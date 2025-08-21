@@ -24,7 +24,8 @@ public class LinkedListExtension
         // FindIntersectPoint.Brute();
         // DetectALoop.Brute();
         // LengthOfLoop.Brute();
-        DeleteMiddleNode.Brute();
+        // DeleteMiddleNode.Brute();
+        StartingPointOfLoop.Brute();
 
         /*
             Data Swap
