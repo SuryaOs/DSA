@@ -28,7 +28,8 @@ public class LinkedListExtension
         // DeleteMiddleNode.Brute();
         // StartingPointOfLoop.Brute();
         // DeleteAllOccurenceOfKey.Brute();
-        FindAlPairsWithGivenSum.Brute();
+        // FindAlPairsWithGivenSum.Brute();
+        RemoveDuplicatesFromSortedDLL.Brute();
 
         /*
             Data Swap
