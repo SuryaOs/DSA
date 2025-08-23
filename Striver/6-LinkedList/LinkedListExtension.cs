@@ -2,6 +2,7 @@
 
 using dsaproblem.Striver.LinkedList.DoublyLinkedList;
 using dsaproblem.Striver.LinkedList.SinglyLinkedList;
+// using dsaproblem.Striver.LinkedList.SinglyLinkedList;
 
 public class LinkedListExtension
 {
@@ -29,7 +30,8 @@ public class LinkedListExtension
         // StartingPointOfLoop.Brute();
         // DeleteAllOccurenceOfKey.Brute();
         // FindAlPairsWithGivenSum.Brute();
-        RemoveDuplicatesFromSortedDLL.Brute();
+        // RemoveDuplicatesFromSortedDLL.Brute();
+        ReverseNodesInKGroup.Brute();
 
         /*
             Data Swap
