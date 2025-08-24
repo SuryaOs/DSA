@@ -31,7 +31,8 @@ public class LinkedListExtension
         // DeleteAllOccurenceOfKey.Brute();
         // FindAlPairsWithGivenSum.Brute();
         // RemoveDuplicatesFromSortedDLL.Brute();
-        ReverseNodesInKGroup.Brute();
+        // ReverseNodesInKGroup.Brute();
+        RotateALL.Brute();
 
         /*
             Data Swap
