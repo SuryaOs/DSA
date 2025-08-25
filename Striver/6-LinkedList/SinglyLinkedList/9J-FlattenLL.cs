@@ -11,9 +11,14 @@ public class FlattenLL
         nH.next.child = new Nodee(10);
         nH.next.next.child = new Nodee(7, null, new Nodee(11, null, new Nodee(12)));
         nH.next.next.next.child = new Nodee(9);
-        nH.next.next.next.next.child = new Nodee(6);
+        nH.next.next.next.next.child = new Nodee(6, null, new Nodee(8));
         // BruteForce(nH);
-        Optimal(nH);
+        Nodee newH = Optimal(nH);
+        while (newH != null)
+        {
+            Console.WriteLine(newH.data);
+            newH = newH.child;
+        }
 
     }
     private static void BruteForce(Nodee head)
@@ -52,9 +57,41 @@ public class FlattenLL
         // time - o(n*m) * 2 + o(xlogx)
         // space - o(n*m) * 2
     }
-    private static void Optimal(Nodee head)
+
+    // HooooohHHOooooo , I wrote it on my own in first try :D
+    private static Nodee Optimal(Nodee head)
     {
-        
+        if (head == null || head.next == null) return head;
+        Nodee L2 = Optimal(head.next);
+        Nodee L1 = head;
+        Nodee dummy = new(-1);
+        Nodee dummyHead = dummy;
+        while (L1 != null && L2 != null)
+        {
+            if (L1.data < L2.data)
+            {
+                dummy.child = L1;
+                L1 = L1.child;
+                dummy = dummy.child;
+            }
+            else
+            {
+                dummy.child = L2;
+                L2 = L2.child;
+                dummy = dummy.child;
+            }
+            dummy.next = null;
+        }
+
+        if (L1 != null)
+        {
+            dummy.child = L1;
+        }
+        if (L2 != null)
+        {
+            dummy.child = L2;
+        }
+        return dummyHead.child;
     }
 }
 
