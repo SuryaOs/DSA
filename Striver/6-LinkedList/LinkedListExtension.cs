@@ -33,7 +33,8 @@ public class LinkedListExtension
         // RemoveDuplicatesFromSortedDLL.Brute();
         // ReverseNodesInKGroup.Brute();
         // RotateALL.Brute();
-        MergeTwoSortedLL.Brute();
+        // MergeTwoSortedLL.Brute();
+        FlattenLL.Brute();
 
         /*
             Data Swap
