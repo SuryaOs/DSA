@@ -15,7 +15,8 @@ public class MergeKSortedList
         Node[] heads = { A, B, C, D };
         // Merge(heads);
         // Node head = MergeTwo(null, C);
-        Node head = MergeK(heads);
+        // Node head = MergeK(heads);
+        Node head = Optimal(heads);
         Intro.Print(head);
     }
     public static void Merge(Node[] heads)
@@ -82,5 +83,27 @@ public class MergeKSortedList
             dummy.next = B;
         }
         return res.next;
+    }
+    public static Node Optimal(Node[] heads)
+    {
+        PriorityQueue<Node, int> pq = new();
+        for (int i = 0; i < heads.Length; i++)
+        {
+            pq.Enqueue(heads[i], heads[i].data);
+        }
+        Node dummy = new(-1);
+        Node temp = dummy;
+        int count = 0;
+        while (pq.Count > 0)
+        {
+            var x = pq.Dequeue();
+            temp.next = x;
+            temp = temp.next;
+            if (temp.next != null)
+            {
+                pq.Enqueue(temp.next, temp.next.data);
+            }
+        }
+        return dummy.next;
     }
 }
