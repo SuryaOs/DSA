@@ -35,7 +35,8 @@ public class LinkedListExtension
         // RotateALL.Brute();
         // MergeTwoSortedLL.Brute();
         // FlattenLL.Brute();
-        MergeKSortedList.Brute();
+        // MergeKSortedList.Brute();
+        SortLL.Brute();
 
         /*
             Data Swap
