@@ -5,6 +5,7 @@ public class Revise
 {
     public static void Practice()
     {
-        SumOfBeautyOfSubstrings.Brute();
+        // SumOfBeautyOfSubstrings.Brute();
+        StringToInteger.Optimal();
     }
 }
