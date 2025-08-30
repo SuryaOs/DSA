@@ -1,7 +1,7 @@
 ﻿using dsaproblem.Arrays;
 using dsaproblem.ArraysMultiD;
 using dsaproblem.Practice;
-using dsaproblem.Recursions;
+// using dsaproblem.Recursions;
 using dsaproblem.Sorting;
 // using dsaproblem.Strings;
 using dsaproblem.Striver;
@@ -12,6 +12,7 @@ using dsaproblem.Striver.Hashing;
 using dsaproblem.Striver.LinkedList;
 using dsaproblem.Striver.Strings;
 using dsaproblem.Wipro;
+using Recursions;
 using ReviseExtension;
 
 // PracticeExtension.Practice();
@@ -26,4 +27,5 @@ using ReviseExtension;
 // WiproExtension.Practice();
 // StringExtension.Practice();
 // LinkedListExtension.Practice();
-  Revise.Practice();
+// Revise.Practice();
+RecursionExtension.Practice();
