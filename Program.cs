@@ -14,6 +14,7 @@ using dsaproblem.Striver.Strings;
 using dsaproblem.Wipro;
 using Recursions;
 using ReviseExtension;
+using StackNQueue;
 
 // PracticeExtension.Practice();
 // ArraysExtension.Practice();
@@ -28,4 +29,5 @@ using ReviseExtension;
 // StringExtension.Practice();
 // LinkedListExtension.Practice();
 // Revise.Practice();
-RecursionExtension.Practice();
+// RecursionExtension.Practice();
+StackNQueueExtension.Practice();
