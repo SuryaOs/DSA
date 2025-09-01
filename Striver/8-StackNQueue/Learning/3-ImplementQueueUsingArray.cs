@@ -36,8 +36,6 @@ public class ImplementQueueUsingArray
         queue.Pop();
         queue.Pop();
         queue.Pop(); // No Elements Found in the queue
-
-
     }
 }
 public class ArrayQueue
@@ -65,16 +63,15 @@ public class ArrayQueue
     }
     public int Pop()
     {
-        if (currSize == 0) throw new IndexOutOfRangeException("No Elements Found In the queue");
+        if (currSize == 0) throw new ArgumentOutOfRangeException("No Elements Found In the queue");
         int popElem = arr[start];
-        start += 1;
-        if (size == start) start = start % size;
-        currSize -= 1;
-        if (currSize == 0)
+        if (currSize == 1) start = end = -1;
+        else
         {
-            start = -1;
-            end = -1;
+            start += 1;
+            start = start % size;
         }
+        currSize -= 1;
         return popElem;
     }
     public int Top()
