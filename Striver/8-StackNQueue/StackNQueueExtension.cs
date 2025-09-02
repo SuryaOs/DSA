@@ -10,6 +10,8 @@ public class StackNQueueExtension
         // ImplementStackUsingArray.Brute();
         // ImplementQueueUsingArray.Brute();
         // ImplementStackUsingLL.Brute();
-        ImplementQueueUsingLL.Brute();
+        // ImplementQueueUsingLL.Brute();
+        // ImplementStackUsingQueue.Brute();
+        ImplementQueueUsingStack.Brute();
     }
 }
