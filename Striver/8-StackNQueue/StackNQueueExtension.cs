@@ -13,6 +13,7 @@ public class StackNQueueExtension
         // ImplementQueueUsingLL.Brute();
         // ImplementStackUsingQueue.Brute();
         // ImplementQueueUsingStack.Brute();
-        BalancedParantheses.Brute();
+        // BalancedParantheses.Brute();
+        Minstack.Brute();
     }
 }
