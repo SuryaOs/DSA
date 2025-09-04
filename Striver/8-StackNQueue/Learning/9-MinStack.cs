@@ -7,13 +7,17 @@ public class Minstack
         // MStack ms = new(); // TC O(N) SC O(2 * N)
         Min ms = new();
         ms.Push(12);
+        ms.Top();       // 12
         ms.GetMin(); // 12
         ms.Push(15);
+        ms.Top(); // 15
         ms.GetMin(); // 12
         ms.Push(10);
         ms.GetMin(); // 10
+        ms.Top();    // 10
         ms.Pop();
         ms.GetMin(); // 12
+        ms.Top(); // 15
     }
 }
 public class Min
@@ -46,6 +50,14 @@ public class Min
     {
         Console.WriteLine(min);
         return min;
+    }
+    public void Top()
+    {
+        int res = -1;
+        int top = stack.Peek();
+        if (top < min) res = min;
+        else res = top;
+        Console.WriteLine(res);
     }
 }
 public class MStack
