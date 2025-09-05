@@ -1,4 +1,5 @@
 using StackNQueue.Learning;
+using StackNQueue.PreInPost;
 
 namespace StackNQueue;
 
@@ -14,6 +15,7 @@ public class StackNQueueExtension
         // ImplementStackUsingQueue.Brute();
         // ImplementQueueUsingStack.Brute();
         // BalancedParantheses.Brute();
-        Minstack.Brute();
+        // Minstack.Brute();
+        InfixToPostFix.Brute();
     }
 }
