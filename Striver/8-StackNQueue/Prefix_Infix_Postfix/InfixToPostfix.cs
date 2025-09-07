@@ -6,6 +6,8 @@ public class InfixToPostFix
     {
         string s = "a+b*(c^d-e)^(f+g*h)-i";
         // s = "(p+q)*(m-n)";
+        // s = "a*(b-d+e)/f";
+        s = "((a+(b*(((c^d)-e)^(f+(g*h)))))-i)";
         Console.WriteLine(InTopost(s));
     }
     public static string InTopost(string s)
