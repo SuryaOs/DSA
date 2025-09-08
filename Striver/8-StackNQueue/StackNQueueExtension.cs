@@ -16,8 +16,9 @@ public class StackNQueueExtension
         // ImplementQueueUsingStack.Brute();
         // BalancedParantheses.Brute();
         // Minstack.Brute();
-        InfixToPostFix.Brute();
+        // InfixToPostFix.Brute();
         // InfixToPrefix.Brute();
-        PostfixToInfix.Brute();
+        // PostfixToInfix.Brute();
+        PrefixToInfix.Brute();
     }
 }

@@ -8,7 +8,7 @@ public class PostfixToInfix
         s = "abcd^e-fgh*+^*+i-";
         Console.WriteLine(PostToIn(s));
     }
-    private static string PostToIn(string s)
+    public static string PostToIn(string s)
     {
         Stack<string> st = new();
         for (int i = 0; i < s.Length; i++)

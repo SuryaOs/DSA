@@ -86,7 +86,7 @@ public class InfixToPrefix
         }
         return Reverse(ans);
     }
-    private static string Reverse(string s)
+    public static string Reverse(string s)
     {
         char[] cA = s.ToCharArray();
         int i = 0;
