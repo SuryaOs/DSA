@@ -19,6 +19,8 @@ public class StackNQueueExtension
         // InfixToPostFix.Brute();
         // InfixToPrefix.Brute();
         // PostfixToInfix.Brute();
-        PrefixToInfix.Brute();
+        // PrefixToInfix.Brute();
+        // PostfixToPrefix.Brute();
+        PrefixToPostfix.Brute();
     }
 }
