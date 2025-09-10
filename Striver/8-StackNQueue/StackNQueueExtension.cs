@@ -1,4 +1,5 @@
 using StackNQueue.Learning;
+using StackNQueue.MonotonicStack;
 using StackNQueue.PreInPost;
 
 namespace StackNQueue;
@@ -21,6 +22,7 @@ public class StackNQueueExtension
         // PostfixToInfix.Brute();
         // PrefixToInfix.Brute();
         // PostfixToPrefix.Brute();
-        PrefixToPostfix.Brute();
+        // PrefixToPostfix.Brute();
+        NextGreaterElement.Brute();
     }
 }
