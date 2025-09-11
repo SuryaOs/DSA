@@ -24,6 +24,8 @@ public class StackNQueueExtension
         // PostfixToPrefix.Brute();
         // PrefixToPostfix.Brute();
         // NextGreaterElement.Brute();
-        NextGreaterElementCircular.Brute();
+        // NextGreaterElementCircular.Brute();
+        // NextSmallerElement.Brute();
+        PreviousSmallerElement.Brute();
     }
 }
