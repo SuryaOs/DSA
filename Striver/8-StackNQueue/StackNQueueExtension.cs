@@ -26,6 +26,7 @@ public class StackNQueueExtension
         // NextGreaterElement.Brute();
         // NextGreaterElementCircular.Brute();
         // NextSmallerElement.Brute();
-        PreviousSmallerElement.Brute();
+        // PreviousSmallerElement.Brute();
+        TrappingRainWater.Brute();
     }
 }
