@@ -7,6 +7,7 @@ public class TrappingRainWater
         int[] a = { 0, 1, 0, 2, 1, 0, 1, 3, 1, 2, 1 };
         Console.WriteLine(Naive(a));
         Console.WriteLine(Medium(a));
+        Console.WriteLine(OptimalDP(a));
     }
     public static int Naive(int[] a)
     {
@@ -50,5 +51,39 @@ public class TrappingRainWater
             res[i] = Math.Max(res[i + 1], a[i]);
         }
         return res;
+    }
+    public static int OptimalDP(int[] a)
+    {
+        int total = 0, lMax = 0, rMax = 0;
+        int l = 0, r = a.Length - 1;
+        while (l < r)
+        {
+            if (a[l] <= a[r])
+            {
+                if (a[l] < lMax)
+                {
+                    total += lMax - a[l];
+                }
+                else
+                {
+                    lMax = Math.Max(lMax, a[l]);
+                }
+                l++;
+            }
+            else
+            {
+                if (a[r] < rMax)
+                {
+                    total += rMax - a[r];
+                }
+                else
+                {
+                    rMax = Math.Max(rMax, a[r]);
+                }
+                r--;
+
+            }
+        }
+        return total;
     }
 }
