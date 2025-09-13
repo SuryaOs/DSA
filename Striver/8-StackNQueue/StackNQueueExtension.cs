@@ -27,6 +27,7 @@ public class StackNQueueExtension
         // NextGreaterElementCircular.Brute();
         // NextSmallerElement.Brute();
         // PreviousSmallerElement.Brute();
-        TrappingRainWater.Brute();
+        // TrappingRainWater.Brute();
+        SumOfSubArrayMinimum.Brute();
     }
 }
