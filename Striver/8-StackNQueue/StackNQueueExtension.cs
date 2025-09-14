@@ -28,6 +28,8 @@ public class StackNQueueExtension
         // NextSmallerElement.Brute();
         // PreviousSmallerElement.Brute();
         // TrappingRainWater.Brute();
-        SumOfSubArrayMinimum.Brute();
+        // SumOfSubArrayMinimum.Brute();
+        // SumOfSubArrayMaximum.Brute();
+        SumOfSubArrayRange.Brute();
     }
 }
