@@ -30,6 +30,7 @@ public class StackNQueueExtension
         // TrappingRainWater.Brute();
         // SumOfSubArrayMinimum.Brute();
         // SumOfSubArrayMaximum.Brute();
-        SumOfSubArrayRange.Brute();
+        // SumOfSubArrayRange.Brute();
+        AsteroidCollision.Brute();
     }
 }
