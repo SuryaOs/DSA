@@ -9,6 +9,7 @@ public class RemoveKDigits
         string s = "1432219";
         s = "54001892";
         // s = "123456";
+        s = "1002991";
         int k = 3;
         // Naive(s, k);
         Console.WriteLine(MediumWithEdgeCase(s, k));
@@ -83,11 +84,11 @@ public class RemoveKDigits
         }
         #region for 54001892, the starting zeros should be
         int z = sb.Length - 1;
-        while (z > 0 && sb[z] == 0)
+        while (z > 0 && sb[z] == '0')
         {
             z--;
         }
-        var res = sb.ToString().Substring(0, z + 1);
+        string res = sb.ToString().Substring(0, z + 1);
         #endregion
         if (string.IsNullOrEmpty(res)) return "0";
         // reverse
