@@ -31,6 +31,7 @@ public class StackNQueueExtension
         // SumOfSubArrayMinimum.Brute();
         // SumOfSubArrayMaximum.Brute();
         // SumOfSubArrayRange.Brute();
-        AsteroidCollision.Brute();
+        // AsteroidCollision.Brute();
+        RemoveKDigits.Brute();
     }
 }
