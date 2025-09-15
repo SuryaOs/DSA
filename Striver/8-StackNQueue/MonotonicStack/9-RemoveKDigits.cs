@@ -7,11 +7,11 @@ public class RemoveKDigits
     public static void Brute()
     {
         string s = "1432219";
-        s = "541892";
-        s = "123456";
+        s = "54001892";
+        // s = "123456";
         int k = 3;
-        Naive(s, k);
-        // Medium(s, k);
+        // Naive(s, k);
+        Console.WriteLine(MediumWithEdgeCase(s, k));
     }
 
     // according to chat gpt Naive is error prone, Medium follows Greedy algorithm
@@ -42,41 +42,56 @@ public class RemoveKDigits
         StringBuilder sb = new();
         for (int i = 0; i < s.Length; i++)
         {
-            while (st.Count > 0 && k > 0 && (st.Peek() - '0' > s[i] - '0'))
+            while (st.Count > 0 && k > 0 && st.Peek() > s[i])
             {
                 st.Pop();
                 k--;
             }
             st.Push(s[i]);
         }
-
-        #region Edge case for string 123456 => Pop K Elements Out
+        while (st.Count > 0)
+        {
+            sb.Append(st.Pop());
+        }
+        // reverse
+        return new String(sb.ToString().Reverse().ToArray());
+    }
+    public static string MediumWithEdgeCase(string s, int k)
+    {
+        Stack<char> st = new();
+        StringBuilder sb = new();
+        for (int i = 0; i < s.Length; i++)
+        {
+            while (st.Count > 0 && k > 0 && st.Peek() > s[i])
+            {
+                st.Pop();
+                k--;
+            }
+            st.Push(s[i]);
+        }
+        #region for 123456, the while block will never pop
         while (k > 0)
         {
             st.Pop();
             k--;
         }
         #endregion
-
         if (st.Count == 0) return "0";
-
         while (st.Count > 0)
         {
             sb.Append(st.Pop());
         }
-        #region  edge case 298100 => before reversing remove the zeroes at the end.
+        #region for 54001892, the starting zeros should be
         int z = sb.Length - 1;
         while (z > 0 && sb[z] == 0)
         {
             z--;
         }
-        string res = sb.ToString().Substring(0, z + 1);
+        var res = sb.ToString().Substring(0, z + 1);
         #endregion
-
         if (string.IsNullOrEmpty(res)) return "0";
-
-        return new string(res.Reverse().ToArray()); // Ik In Built, but fine
-
+        // reverse
+        return new String(res.Reverse().ToArray());
     }
 }
 
