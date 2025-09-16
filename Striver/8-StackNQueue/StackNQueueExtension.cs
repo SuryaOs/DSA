@@ -1,3 +1,4 @@
+using StackNQueue.Implementation;
 using StackNQueue.Learning;
 using StackNQueue.MonotonicStack;
 using StackNQueue.PreInPost;
@@ -32,6 +33,8 @@ public class StackNQueueExtension
         // SumOfSubArrayMaximum.Brute();
         // SumOfSubArrayRange.Brute();
         // AsteroidCollision.Brute();
-        RemoveKDigits.Brute();
+        // RemoveKDigits.Brute();
+        // StockSpan.Brute();
+        LargestRectangleInHistogram.Brute();
     }
 }
