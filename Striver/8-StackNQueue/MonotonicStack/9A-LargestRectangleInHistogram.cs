@@ -4,9 +4,10 @@ public class LargestRectangleInHistogram
 {
     public static void Brute()
     {
-        int[] a = { 3, 5, 1, 7, 5, 9 };
-        Console.WriteLine(Naive(a)); // TC O(5N), SC O(4N)
-        Console.WriteLine(Medium(a)); // TC O(3N), SC O(3N)
+        int[] a = { 3, 2, 10, 11, 5, 10, 6, 3 };
+        Console.WriteLine(Naive(a)); // TC 5*O(N), SC 5*O(N)
+        Console.WriteLine(Medium(a)); // TC 3*O(N), SC 3*O(N)
+        Console.WriteLine(Optimal(a)); // TC 2*O(N), SC 2*O(N)
     }
     private static int Naive(int[] a)
     {
@@ -35,6 +36,32 @@ public class LargestRectangleInHistogram
             int sum = (nsI[i] - psI - 1) * a[i];
             largest = Math.Max(sum, largest);
             st.Push(i);
+        }
+        return largest;
+    }
+    private static int Optimal(int[] a)
+    {
+        Stack<int> st = new(); // SC O(N)
+        int largest = -1;
+        for (int i = 0; i < a.Length; i++) // TC O(N)
+        {
+            while (st.Count > 0 && a[st.Peek()] > a[i])
+            {
+                int j = st.Pop(); //  O(N)
+                int nse = i;
+                int pse = st.Count == 0 ? -1 : st.Peek();
+                int sizeofrectangle = (nse - pse - 1) * a[j];
+                largest = Math.Max(largest, sizeofrectangle);
+            }
+            st.Push(i);
+        }
+        while (st.Count > 0)
+        {
+            int i = st.Pop();
+            int pse = st.Count == 0 ? -1 : st.Peek();
+            int nse = a.Length;
+            int sizeofrectangle = (nse - pse - 1) * a[i];
+            largest = Math.Max(largest, sizeofrectangle);
         }
         return largest;
     }
