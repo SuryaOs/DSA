@@ -7,7 +7,7 @@ public class LargestRectangleInHistogram
         int[] a = { 3, 2, 10, 11, 5, 10, 6, 3 };
         Console.WriteLine(Naive(a)); // TC 5*O(N), SC 5*O(N)
         Console.WriteLine(Medium(a)); // TC 3*O(N), SC 3*O(N)
-        Console.WriteLine(Optimal(a)); // TC 2*O(N), SC 2*O(N)
+        Console.WriteLine(Optimal(a)); // TC 2*O(N), SC O(N)
     }
     private static int Naive(int[] a)
     {
@@ -39,7 +39,7 @@ public class LargestRectangleInHistogram
         }
         return largest;
     }
-    private static int Optimal(int[] a)
+    public static int Optimal(int[] a)
     {
         Stack<int> st = new(); // SC O(N)
         int largest = -1;
@@ -47,7 +47,7 @@ public class LargestRectangleInHistogram
         {
             while (st.Count > 0 && a[st.Peek()] > a[i])
             {
-                int j = st.Pop(); //  O(N)
+                int j = st.Pop(); // TC O(N)
                 int nse = i;
                 int pse = st.Count == 0 ? -1 : st.Peek();
                 int sizeofrectangle = (nse - pse - 1) * a[j];
