@@ -34,8 +34,9 @@ public class StackNQueueExtension
         // SumOfSubArrayRange.Brute();
         // AsteroidCollision.Brute();
         // RemoveKDigits.Brute();
-        StockSpan.Brute();
+        // StockSpan.Brute();
         // LargestRectangleInHistogram.Brute();
         // MaximalRectangle.Brute();
+        SlidingWindowMaximum.Brute();
     }
 }
