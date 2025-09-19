@@ -37,6 +37,12 @@ public class StackNQueueExtension
         // StockSpan.Brute();
         // LargestRectangleInHistogram.Brute();
         // MaximalRectangle.Brute();
-        SlidingWindowMaximum.Brute();
+        // SlidingWindowMaximum.Brute();
+        Celebrity.Brute();
+
+        /*
+            NGE, PGE, NSE, PSE (Monotonic Stack)
+            Dequeue
+        */
     }
 }
