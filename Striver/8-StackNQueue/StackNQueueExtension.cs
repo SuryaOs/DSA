@@ -38,7 +38,8 @@ public class StackNQueueExtension
         // LargestRectangleInHistogram.Brute();
         // MaximalRectangle.Brute();
         // SlidingWindowMaximum.Brute();
-        Celebrity.Brute();
+        // Celebrity.Brute();
+        LRUCacheFacade.Brute();
 
         /*
             NGE, PGE, NSE, PSE (Monotonic Stack)

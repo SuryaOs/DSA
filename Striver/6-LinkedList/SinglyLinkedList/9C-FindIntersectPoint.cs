@@ -18,6 +18,7 @@ public class FindIntersectPoint
         Node head = Optimal(nodeA, nodeB);
         Intro.Print(head);
     }
+
     private static Node FindIntersect(Node headA, Node headB)
     {
         HashSet<Node> set = new();
@@ -36,46 +37,56 @@ public class FindIntersectPoint
         }
         return null;
     }
+
     private static Node FindIntersectNoExtraSpace(Node headA, Node headB)
     {
         Node tempA = headA;
         Node tempB = headB;
-        int cA = 0, cB = 0;
+        int cA = 0,
+            cB = 0;
         cA = Intro.LengthOfLL(tempA);
         cB = Intro.LengthOfLL(tempB);
 
-        return cA < cB ? FindIt(tempB, tempA, cB - cA)
-        : FindIt(tempA, tempB, cA - cB);
+        return cA < cB ? FindIt(tempB, tempA, cB - cA) : FindIt(tempA, tempB, cA - cB);
     }
+
     private static Node FindIt(Node t1, Node t2, int diff)
     {
         while (diff-- > 0)
         {
             t1 = t1.next;
         }
-        while (t1 != null)
+        // while (t1 != null)
+        // {
+        //     if (t1 == t2)
+        //     {
+        //         return t1;
+        //     }
+        //     t1 = t1.next;
+        //     t2 = t2.next;
+        // }
+        while (t1 != t2)
         {
-            if (t1 == t2)
-            {
-                return t1;
-            }
             t1 = t1.next;
             t2 = t2.next;
         }
-        return null;
+        return t1;
     }
+
     private static Node Optimal(Node tempA, Node tempB)
     {
         while (tempA != tempB)
         {
             tempA = tempA.next;
             tempB = tempB.next;
-            if (tempA == tempB)
-                return tempA;
+            // if (tempA == tempB)
+            //     return tempA;
 
-            if (tempA == null) tempA = tempB;
-            if (tempB == null) tempB = tempA;
+            if (tempA == null)
+                tempA = tempB;
+            if (tempB == null)
+                tempB = tempA;
         }
-        return null;
+        return tempA;
     }
 }
