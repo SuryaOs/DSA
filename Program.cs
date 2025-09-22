@@ -1,4 +1,5 @@
-﻿using dsaproblem.Arrays;
+﻿using BinarySearch.OneDArrays;
+using dsaproblem.Arrays;
 using dsaproblem.ArraysMultiD;
 using dsaproblem.Practice;
 // using dsaproblem.Recursions;
@@ -30,4 +31,5 @@ using StackNQueue;
 // LinkedListExtension.Practice();
 // Revise.Practice();
 // RecursionExtension.Practice();
-StackNQueueExtension.Practice();
+// StackNQueueExtension.Practice();
+BinarySearchExtension.Practice();

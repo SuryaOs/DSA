@@ -1,3 +1,4 @@
+using dsaproblem.Striver.Arrays.Medium;
 using StackNQueue.Implementation;
 using StackNQueue.Learning;
 using StackNQueue.MonotonicStack;
@@ -40,11 +41,56 @@ public class StackNQueueExtension
         // SlidingWindowMaximum.Brute();
         // Celebrity.Brute();
         // LRUCacheFacade.Brute();
-        LFUCacheFacade.Brute();
+        // LFUCacheFacade.Brute();
+        Brute();
 
         /*
             NGE, PGE, NSE, PSE (Monotonic Stack)
             Dequeue
         */
+    }
+
+    private static void Brute()
+    {
+        string s = "++x/*yzwu";
+        Console.WriteLine(PostFixToInfix(s));
+    }
+
+    private static string PostFixToInfix(string s)
+    {
+        string ans = "";
+        Stack<string> st = new();
+        foreach (char c in s)
+        {
+            if (c >= 'a' && c <= 'z')
+            {
+                st.Push(c.ToString());
+            }
+            else
+            {
+                var a = st.Pop();
+                var b = st.Pop();
+                ans = $"({b}{c}{a})";
+                st.Push(ans);
+            }
+        }
+        return ans;
+    }
+
+    private static int Priority(char a)
+    {
+        switch (a)
+        {
+            case '^':
+                return 3;
+            case '*':
+            case '/':
+                return 2;
+            case '+':
+            case '-':
+                return 1;
+            default:
+                return -1;
+        }
     }
 }
