@@ -10,8 +10,8 @@ public class FloorAndCeil
     }
     private static void Brute(int[] a, int target)
     {
-        int floor = -1;
-        int ceil = -1;
+        int floor = -1; // largest index where a[index] <= target
+        int ceil = -1; // smallest index where a[index] >= target
         int low = 0;
         int high = a.Length - 1;
         while (low <= high)

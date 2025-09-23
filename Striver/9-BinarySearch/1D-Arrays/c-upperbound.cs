@@ -2,11 +2,14 @@ namespace BinarySearch.OneDArrays;
 
 public class UpperBound
 {
+    /*
+        smallest index where a[index] > target
+    */
     public static void Run()
     {
         int[] a = { 3, 5, 8, 9, 15, 19 };
         int x = 9;
-        Console.WriteLine(Brute(a, x));
+        Console.WriteLine(Brute(a, x)); //4
     }
     private static int Brute(int[] a, int target)
     {

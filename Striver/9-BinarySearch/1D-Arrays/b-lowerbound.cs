@@ -13,7 +13,9 @@ public class LowerBound
     {
         int[] a = { 1, 3, 5, 6 };
         int x = 7;
-        Console.WriteLine(Brute(a, x));
+        int y = 5;
+        Console.WriteLine(Brute(a, x)); // 4
+        Console.WriteLine(Brute(a, y)); // 2
     }
     private static int Brute(int[] a, int target)
     {
