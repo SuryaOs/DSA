@@ -16,7 +16,7 @@ public class SearchInRotatedSortedArray
         {
             int mid = (low + high) / 2;
             if (a[mid] == target) return mid;
-            if (a[mid] < a[low])
+            if (a[mid] < a[low]) // right half is sorted
             {
                 if (a[mid] <= target && target <= a[high])
                 {
@@ -27,7 +27,7 @@ public class SearchInRotatedSortedArray
                     high = mid - 1;
                 }
             }
-            else
+            else // left half is ssorted (a[mid] >= a[low])
             {
                 if (a[low] <= target && target <= a[mid])
                 {

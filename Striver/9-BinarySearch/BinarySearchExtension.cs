@@ -13,6 +13,10 @@ public class BinarySearchExtension
         // FloorAndCeil.Run();
         // FirstAndLastOccurence.Run();
         // CountOccurence.Run();
-        SearchInRotatedSortedArray.Run();
+        // SearchInRotatedSortedArray.Run();
+        // SearchInRotatedSortedArrayII.Run();
+        // MinInRotatedSortedArray.Run();
+        // HowManyTimesArrayIsRotated.Run();
+        SingleElementInSortedArray.Run();
     }
 }
