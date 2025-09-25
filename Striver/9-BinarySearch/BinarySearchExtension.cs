@@ -17,6 +17,7 @@ public class BinarySearchExtension
         // SearchInRotatedSortedArrayII.Run();
         // MinInRotatedSortedArray.Run();
         // HowManyTimesArrayIsRotated.Run();
-        SingleElementInSortedArray.Run();
+        // SingleElementInSortedArray.Run();
+        FindPeakElement.Run();
     }
 }
