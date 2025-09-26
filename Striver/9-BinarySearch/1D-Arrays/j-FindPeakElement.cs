@@ -6,7 +6,7 @@ public class FindPeakElement
     {
         int[] a = { 1, 5, 1, 2, 1 };
         Console.WriteLine(Brute(a)); // TC O(N)
-        Console.WriteLine(Optimal(a));
+        Console.WriteLine(Optimal(a)); // TC O(LOG N)
     }
     private static int Brute(int[] a)
     {

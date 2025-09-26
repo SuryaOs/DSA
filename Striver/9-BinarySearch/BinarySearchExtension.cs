@@ -1,4 +1,5 @@
 using BinarySearch.OneDArrays;
+using BinarySearch.Problems;
 
 namespace BinarySearch.OneDArrays;
 
@@ -18,6 +19,8 @@ public class BinarySearchExtension
         // MinInRotatedSortedArray.Run();
         // HowManyTimesArrayIsRotated.Run();
         // SingleElementInSortedArray.Run();
-        FindPeakElement.Run();
+        // FindPeakElement.Run();
+        // SquareRoot.Run();
+        NthRoot.Run();
     }
 }
