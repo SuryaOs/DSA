@@ -21,6 +21,7 @@ public class BinarySearchExtension
         // SingleElementInSortedArray.Run();
         // FindPeakElement.Run();
         // SquareRoot.Run();
-        NthRoot.Run();
+        // NthRoot.Run();
+        KokoEatingBananas.Run();
     }
 }
