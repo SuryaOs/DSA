@@ -23,6 +23,7 @@ public class BinarySearchExtension
         // SquareRoot.Run();
         // NthRoot.Run();
         // KokoEatingBananas.Run();
-        MinDaysToMakeMBoquets.Run();
+        // MinDaysToMakeMBoquets.Run();
+        SmallestDivisorThreshold.Run();
     }
 }
