@@ -24,6 +24,7 @@ public class BinarySearchExtension
         // NthRoot.Run();
         // KokoEatingBananas.Run();
         // MinDaysToMakeMBoquets.Run();
-        SmallestDivisorThreshold.Run();
+        // SmallestDivisorThreshold.Run();
+        CapacityToShipPackageInNDays.Run();
     }
 }

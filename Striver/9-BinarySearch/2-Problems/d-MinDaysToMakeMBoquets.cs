@@ -139,7 +139,7 @@ public class MinDaysToMakeMBoquets
         }
         return numberOfBoquets;
     }
-    private static int FindMin(int[] arr)
+    public static int FindMin(int[] arr)
     {
         int ans = int.MaxValue;
         for (int i = 0; i < arr.Length; i++)
@@ -148,7 +148,7 @@ public class MinDaysToMakeMBoquets
         }
         return ans;
     }
-    private static int FindMax(int[] arr)
+    public static int FindMax(int[] arr)
     {
         int ans = int.MinValue;
         for (int i = 0; i < arr.Length; i++)
