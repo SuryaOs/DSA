@@ -26,6 +26,8 @@ public class BinarySearchExtension
         // MinDaysToMakeMBoquets.Run();
         // SmallestDivisorThreshold.Run();
         // CapacityToShipPackageInNDays.Run();
-        KthMissingPositiveNumber.Run();
+        // KthMissingPositiveNumber.Run();
+        // FindMaximumOfMinimumDistance.Run();
+        AllocateMinimumNumberOfPages.Run();
     }
 }
