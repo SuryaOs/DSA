@@ -28,6 +28,7 @@ public class BinarySearchExtension
         // CapacityToShipPackageInNDays.Run();
         // KthMissingPositiveNumber.Run();
         // FindMaximumOfMinimumDistance.Run();
-        AllocateMinimumNumberOfPages.Run();
+        // AllocateMinimumNumberOfPages.Run();
+        SplitArrayLargestSum.Run();
     }
 }
