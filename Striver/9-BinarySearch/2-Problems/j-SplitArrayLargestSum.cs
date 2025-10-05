@@ -2,7 +2,7 @@ using System.Security.AccessControl;
 
 namespace BinarySearch.Problems;
 
-public class SplitArrayLargestSum
+public class SplitArrayLargestSum // AND ALSO PaintersPartition
 {
     public static void Run()
     {

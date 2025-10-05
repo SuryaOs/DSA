@@ -29,6 +29,7 @@ public class BinarySearchExtension
         // KthMissingPositiveNumber.Run();
         // FindMaximumOfMinimumDistance.Run();
         // AllocateMinimumNumberOfPages.Run();
-        SplitArrayLargestSum.Run();
+        // SplitArrayLargestSum.Run();
+        MinimiseMaximumDistanceBetweenGasStations.Run();
     }
 }
