@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices.Marshalling;
+
 namespace BinarySearch.Problems;
 
 public class MinimiseMaximumDistanceBetweenGasStations
@@ -5,9 +7,10 @@ public class MinimiseMaximumDistanceBetweenGasStations
     public static void Run()
     {
         int[] arr = { 1, 13, 17, 23 };
-        int k = 5;
+        int k = 4;
         Console.WriteLine(Naive(arr, k)); // O (K * N)
         Console.WriteLine(Medium(arr, k)); // TC : O(N LogN + K LogN) ; SC : O(N-1)
+        Console.WriteLine(Optimal(arr, k));
     }
     private static double Naive(int[] a, int k)
     {
@@ -64,6 +67,41 @@ public class MinimiseMaximumDistanceBetweenGasStations
         }
         var top = pq.Peek();
         return top.first;
+    }
+
+    private static double Optimal(int[] a, int k)
+    {
+        double high = -1;
+        for (int i = 0; i < a.Length - 1; i++)
+        {
+            int diff = a[i + 1] - a[i];
+            high = Math.Max(diff, high);
+        }
+        double low = 0;
+        while (high - low > 10e-6)
+        {
+            double mid = (low + high) / 2.0;
+            int count = NoOfStations(a, mid);
+            if (count > k)
+            {
+                low = mid;
+            }
+            else
+            {
+                high = mid;
+            }
+        }
+        return high;
+    }
+    private static int NoOfStations(int[] a, double mid)
+    {
+        int noOfStations = 0;
+        for (int i = 0; i < a.Length - 1; i++)
+        {
+            int diff = a[i + 1] - a[i];
+            noOfStations += (int)Math.Ceiling(diff / mid) - 1;
+        }
+        return noOfStations;
     }
 }
 public class Pair : IComparable<Pair>
