@@ -30,6 +30,7 @@ public class BinarySearchExtension
         // FindMaximumOfMinimumDistance.Run();
         // AllocateMinimumNumberOfPages.Run();
         // SplitArrayLargestSum.Run();
-        MinimiseMaximumDistanceBetweenGasStations.Run();
+        // MinimiseMaximumDistanceBetweenGasStations.Run();
+        MedianOfTwoSortedArrays.Run();
     }
 }
