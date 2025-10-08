@@ -4,12 +4,13 @@ public class MedianOfTwoSortedArrays
 {
     public static void Run()
     {
-        int[] a = { 1, 3, 4, 7, 10, 13 };
-        int[] b = { 2, 3, 6, 20 };
+        int[] a = { 2, 4, 6 };
+        int[] b = { 1, 3 };
         Console.WriteLine(Naive(a, b)); // TC  O(n1 + n2); SC O(n1 + n2)
         Console.WriteLine(Medium(a, b)); // TC  O(n1 + n2)
+        Console.WriteLine(Optimal(a, b)); // TC  O(n1 + n2)
     }
-    private static int Naive(int[] a, int[] b)
+    private static double Naive(int[] a, int[] b)
     {
         int resLen = a.Length + b.Length;
         int[] res = new int[resLen];
@@ -38,11 +39,11 @@ public class MedianOfTwoSortedArrays
         {
             res[k++] = b[bI++];
         }
-        int ans = 0;
+        double ans;
         int mid = (resLen / 2);
         if (resLen % 2 == 0)
         {
-            ans = (res[mid] + res[mid - 1]) / 2;
+            ans = (res[mid] + res[mid - 1]) / 2.0;
         }
         else
         {
@@ -50,7 +51,7 @@ public class MedianOfTwoSortedArrays
         }
         return ans;
     }
-    public static int Medium(int[] a, int[] b)
+    public static double Medium(int[] a, int[] b)
     {
         int n1 = a.Length;
         int n2 = b.Length;
@@ -102,6 +103,44 @@ public class MedianOfTwoSortedArrays
         if (n % 2 == 1)
             return ind2El;
 
-        return (ind1El + ind2El) / 2;
+        return (ind1El + ind2El) / 2.0;
+    }
+    private static double Optimal(int[] a, int[] b)
+    {
+        int n1 = a.Length;
+        int n2 = b.Length;
+        if (n1 > n2) return Optimal(b, a);
+
+        int low = 0;
+        int high = n1;
+        int leftHalf = (n1 + n2 + 1) / 2;
+        while (low <= high)
+        {
+            int mid1 = (low + high) / 2;
+            int mid2 = leftHalf - mid1;
+
+            int l1 = mid1 > 0 ? a[mid1 - 1] : int.MinValue;
+            int l2 = mid2 > 0 ? b[mid2 - 1] : int.MinValue;
+            int r1 = mid1 < n1 ? a[mid1] : int.MaxValue;
+            int r2 = mid2 < n2 ? b[mid2] : int.MaxValue;
+
+            if (l1 > r2)
+            {
+                high = mid1 - 1;
+            }
+            else if (l2 > r1)
+            {
+                low = mid1 + 1;
+            }
+            else
+            {
+                int x = Math.Max(l1, l2);
+                int y = Math.Min(r1, r2);
+
+                if ((n1 + n2) % 2 == 1) return x;
+                return (x + y) / 2.0;
+            }
+        }
+        return 0;
     }
 }
