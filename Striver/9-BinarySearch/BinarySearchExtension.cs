@@ -1,5 +1,6 @@
 using BinarySearch.OneDArrays;
 using BinarySearch.Problems;
+using BinarySearch.TwoDArrays;
 
 namespace BinarySearch.OneDArrays;
 
@@ -32,6 +33,8 @@ public class BinarySearchExtension
         // SplitArrayLargestSum.Run();
         // MinimiseMaximumDistanceBetweenGasStations.Run();
         // MedianOfTwoSortedArrays.Run();
-        KthElementOfTwoSortedArrays.Run();
+        // KthElementOfTwoSortedArrays.Run();
+        /**************2 D Arrays****************/
+        RowWithMaximumNumberOf1s.Run();
     }
 }
