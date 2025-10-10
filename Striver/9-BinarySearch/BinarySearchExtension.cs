@@ -35,6 +35,7 @@ public class BinarySearchExtension
         // MedianOfTwoSortedArrays.Run();
         // KthElementOfTwoSortedArrays.Run();
         /**************2 D Arrays****************/
-        RowWithMaximumNumberOf1s.Run();
+        // RowWithMaximumNumberOf1s.Run();
+        SearchInSortedMatrix.Run();
     }
 }
