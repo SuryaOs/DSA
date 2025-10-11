@@ -36,6 +36,7 @@ public class BinarySearchExtension
         // KthElementOfTwoSortedArrays.Run();
         /**************2 D Arrays****************/
         // RowWithMaximumNumberOf1s.Run();
-        SearchInSortedMatrix.Run();
+        // SearchInSortedMatrix.Run();
+        SearchInTwoDMatrix.Run();
     }
 }
